@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: jaho1986
+Build-Jdk: 16.0.2
+Implementation-Title: Cucumber-Java-JUnit Project
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.jaho.cucumber
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/course
+Created-By: Maven Integration for Eclipse
+
