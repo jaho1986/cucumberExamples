@@ -1,13 +1,5 @@
 package com.jaho.cucumber.course.definitions;
 
-import static io.restassured.RestAssured.given;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
-import java.util.List;
-
-import org.springframework.boot.test.context.SpringBootTest;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.spring.CucumberContextConfiguration;
@@ -15,16 +7,23 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
+import org.springframework.boot.test.context.SpringBootTest;
 
-@CucumberContextConfiguration
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+import java.util.List;
+
+import static io.restassured.RestAssured.given;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+//@CucumberContextConfiguration
+//@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class SpringbootCucumberTestDefinitions {
- 
 
+/*
     private static RequestSpecification request;
     private Response response;
     private ValidatableResponse json;
-    
+
     @Given("^I send a GET request to the endpoint$")
     public void sendGETRequest(){
         request = given()
@@ -39,7 +38,7 @@ public class SpringbootCucumberTestDefinitions {
                     .get("/users/TheFreeRangeTester/repos");
         json = response.then().statusCode(expectedStatusCode);
     }
-    
+
     @Given("^I send a GET request to the (.+) URI$")
     public void sendGETRequest(String baseURI) {
         request = given()
@@ -53,7 +52,8 @@ public class SpringbootCucumberTestDefinitions {
     			.when()
     			.get(endpoint);
     	List<String> jsonResponse = response.jsonPath().getList("$");
-    	assertEquals(expectedSize, jsonResponse.size());
+        assertEquals(expectedSize, jsonResponse.size());
+
     }
     
     @Then("^I validate (.+) in the response at (.+) endpoint$")
@@ -73,4 +73,6 @@ public class SpringbootCucumberTestDefinitions {
     	String jsonResponse = response.jsonPath().getString("address.street");
     	assertTrue("The value: " + expectedStreet + " is not in the response. ",jsonResponse.contains(expectedStreet));
     }
+
+*/
 }
