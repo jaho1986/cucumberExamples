@@ -1,4 +1,4 @@
-package com.jaho.cucumber.course.definitions;
+package com.jaho.cucumber.course.tests;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

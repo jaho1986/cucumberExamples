@@ -1,10 +1,11 @@
-package com.jaho.cucumber.course.definitions;
+package com.jaho.cucumber.course.tests;
 
+import com.jaho.cucumber.course.definitions.RequestInformation;
+import com.jaho.cucumber.course.definitions.TestIntegrationCore;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.json.JSONException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.http.ResponseEntity;

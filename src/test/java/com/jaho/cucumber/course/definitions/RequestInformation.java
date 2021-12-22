@@ -9,17 +9,17 @@ public class RequestInformation {
     private Map<String, ?> headers;
     private String body;
 
-    RequestInformation (String url, Map<String, ?> headers, String body) {
+    public RequestInformation (String url, Map<String, ?> headers, String body) {
         this.url=url;
         this.headers = headers;
         this.body = body;
     }
 
-    RequestInformation (String url, Map<String, ?> headers) {
+    public RequestInformation (String url, Map<String, ?> headers) {
         this.url=url;
         this.headers = headers;
     }
 
-    RequestInformation () {
+    public RequestInformation() {
     }
 }
